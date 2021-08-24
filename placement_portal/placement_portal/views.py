@@ -6,7 +6,9 @@ def home(request):
 
 
 def login(request):
-    get_button=request.GET.get('studentloginbutton','default')
-    print(get_button)
-    return render(request,'login_register.html')
+   
+    return render(request,'login.html')
+
+def register(request):
+    return render(request,'register.html')
 
