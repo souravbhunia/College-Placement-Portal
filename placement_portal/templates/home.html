@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
       
-      <link rel="stylesheet" href="./style.css">
+      
 
       
     <!-- Required meta tags -->
@@ -13,7 +13,7 @@
 
 
     {% load static %}
-  <link rel="stylesheet" type="text/css" href="{% static 'css/f.css'%}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/home.css'%}"/>
 
 
     
@@ -60,9 +60,9 @@
       </nav>
 
 
-      <form class='home-page-button'>
-     <button type="button" class="btn btn-dark" id="right-panel-link">Student Login</button>
-     <button type="button" class="btn btn-dark" id="right-panel-link">Company Login</button>
+      <form class='home-page-button' action='/login' >
+     <button type="submit" class="btn btn-dark" name='studentloginbutton'>Student Login</button></a>
+     <button type="submit" class="btn btn-dark" id="right-panel-link">Company Login</button>
 
     </form>     
 
