@@ -4,12 +4,12 @@ from . import views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
     path('home/',views.home,name='homepage'),
     path('login', views.login),
-    path('',views.home,name='homepage'),
+    #path('',views.home,name='homepage'),
     path('register',views.register),
-
+    path('',views.add_show, name="addandshow"),
    
 
 ]
